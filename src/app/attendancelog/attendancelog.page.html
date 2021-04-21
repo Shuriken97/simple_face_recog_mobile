@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Attendance Log</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button (click)="logout()">
+        <ion-icon slot="icon-only" name="log-out"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+  <ion-card *ngFor="let attendance of attendance">
+    <ion-card-header>
+      <ion-card-title></ion-card-title>
+      <ion-card-subtitle>Name : {{attendance.name}}</ion-card-subtitle>
+      <ion-card-subtitle>Subject Name : {{attendance.sub_name}}</ion-card-subtitle>
+      <ion-card-subtitle>Attendance Time : {{attendance.create_time}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+
+      <ion-button shape="round" color="danger" size="small" (click)="RemoveRecord(attendance.atten_id)">
+        <ion-icon size="small" slot="icon-only" name="trash"></ion-icon>
+      </ion-button>
+  </ion-card-content>
+
+  </ion-card>
+</ion-list>
+</ion-content>

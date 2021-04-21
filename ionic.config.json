@@ -1,0 +1,7 @@
+{
+  "name": "fypfacerecog",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-title >
+      Homepage
+    </ion-title>
+    <ion-buttons slot="primary">
+        <ion-button (click)="logout()">
+          <ion-icon slot="icon-only" name="log-out"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <div class="ion-padding">
+    <!--p>Welcome back! {{attendance.username}}</p-->
+    <ion-card (click)="click1()">
+      <img src="assets/img/img1.jpg"/>
+      <ion-card-header>
+        <ion-card-title>Attendance Log</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        View Attendance Log
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+
